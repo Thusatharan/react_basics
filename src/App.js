@@ -1,25 +1,44 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './components/Buttons'
 
 function App() {
+
+  function getFullName(object) {
+    if (object) {
+      return object.firstname + ' ' + object.lastname;
+    }
+
+    else {
+      return 'Stranger';
+    }
+  }
+
+  const persons = [
+    {
+      firstname: 'Thusanth',
+      lastname: 'Thusatharan',
+      age: '26',
+      gender: 'Male'
+    },
+    {
+      firstname: 'Aji',
+      lastname: 'Ramesh',
+      age: '26',
+      gender: 'Male'
+    },
+    {
+      firstname: 'Kandee',
+      lastname: 'Kendeepan',
+      age: '26',
+      gender: 'Male'
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    persons.map((person) => <div className='title'>Hello, {getFullName(person)}
+    </div>)
+
   );
+
 }
 
 export default App;
