@@ -1,0 +1,34 @@
+.body {
+    background-color: #21222A;
+    color: white;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.subhead {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button_add {
+    margin: 50px;
+}
+
+.value {
+    font-size: 50px;
+}
